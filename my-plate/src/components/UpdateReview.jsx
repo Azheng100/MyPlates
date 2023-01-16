@@ -37,7 +37,6 @@ const handleSubmit = async (event) => {
     event.preventDefault()
     await EnterReview(reviewForm)
     setReviewForm(initialState)
-    window.location.reload()
     
    
    

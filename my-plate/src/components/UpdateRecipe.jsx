@@ -34,7 +34,7 @@ export default function UpdateRecipe () {
     //get existing recipe info from database and set ingredient form length to existing ingredients
     useEffect(() => {
         const GetData = async () => {
-            const response = await axios.get(`${BASE_URL}/api/recipes/${recipe_id}`)
+            const response = await axios.get(`https://myplatesbackend.herokuapp.com//api/recipes/${recipe_id}`)
             setRecipeInfo(response.data)
             let testNullArr = []
             let entryExists = true
