@@ -10,7 +10,7 @@ export default function RecipeList () {
     useEffect(()=>{
         const getRecipe = async ()=>{
             try{
-            const response = await axios.get(`http://localhost:3001/api/recipes/`);
+            const response = await axios.get(`https://myplatesbackend.herokuapp.com/api/recipes/`);
             setRecipe(response.data)
 
         } catch(e){

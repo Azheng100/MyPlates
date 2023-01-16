@@ -11,7 +11,7 @@ export default function RandomRecipe () {
     useEffect(()=>{
         const getRecipe = async ()=>{
             try{
-            const response = await axios.get(`http://localhost:3001/api/recipes/`);
+            const response = await axios.get(`https://myplatesbackend.herokuapp.com/api/recipes/`);
             
             const random = Math.floor(Math.random()*response.data.length) 
             
